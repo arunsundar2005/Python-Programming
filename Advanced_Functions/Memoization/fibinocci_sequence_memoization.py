@@ -10,9 +10,11 @@ def fib(n):
         return t 
 
 
-n = int(input("Enter the Number?"))
-for i in range(1,n+1):
-    print(fib(i), end= "\t")
+
+if __name__ == '__main__':
+    n = int(input("Enter the Number?"))
+    for i in range(1,n+1):
+        print(fib(i), end= "\t")
 
 
 
