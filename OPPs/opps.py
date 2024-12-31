@@ -17,7 +17,7 @@ class School():
         print("Thanks a lot, Hope he does good")
 
     def __del__(self):
-        print(f"\a\a\aDeletting... ... ...\n\a\t\tOh Shit\a, It's all your fault, didn't I tell you that {self.__controler} would bring doom to {self.school_name} one day :( :(\n\t\tMy era is over, Bye ! ! !\nDeleted Successfully")
+        print(f"\a\a\aDeletting... ... ...\nno... no.. no.\n\a\t\tOh Shit\a, It's all your fault, didn't I tell you that {self.__controler} would bring doom to {self.school_name} one day :( :(\n\t\tMy era is over, Bye ! ! !\nDeleted Successfully")
 
 
 sma = School("St. Michael's Academy", 10000, "Gandhi Nagar", 2005, "Brother Paul")
