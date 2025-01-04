@@ -1,0 +1,51 @@
+>>> a = 10
+>>> b = c = 10
+>>> id()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: id() takes exactly one argument (0 given)
+>>> id(a)
+140734542187224
+>>> id(b)
+140734542187224
+>>> id(c)
+140734542187224
+>>> l = [1,2,3,4]
+>>> dir(l)
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> # Functions and attributes asso
+ciated with the variable
+>>> i = 10
+>>> dir(i)
+['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__getstate__', '__gt__', '__hash__', '__index__', '__init__', '__init_subclass__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '_>>> b__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__
+>>> __xor__', 'as_integer_ratio', 'bit_count', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'is_integer', 'numerato
+>>> 'real', 'to_bytes']
+>>>
+>>>
+>>> # Methods --> Functions ; but it slight difference is there ; We shall see when OOAD comes into picture
+>>> # attributes --> Variables;
+>>>
+>>> i = range(5)
+>>> i
+range(0, 5)
+>>> list(i) # list() --> given elements will be converted to list
+[0, 1, 2, 3, 4]
+>>> j = list(i) # list() --> given elements will be converted to list
+>>> type(i)
+<class 'range'>
+>>> type(j)
+<class 'list'>
+>>> r = range(1, 9)
+>>> r
+range(1, 9)
+>>> list(r)
+[1, 2, 3, 4, 5, 6, 7, 8]
+>>> r = range(1, 9, 2)
+>>> list(r)
+[1, 3, 5, 7]
+>>> r = range(9, 1, -2)
+>>> list(r)
+[9, 7, 5, 3]
+>>> r = range(9, 1, 2)
+>>> list(r)
+[]
